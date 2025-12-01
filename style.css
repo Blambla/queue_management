@@ -257,3 +257,178 @@ button:hover {
 .card-button:hover {
   background-color: #005a9e;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.section {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+button, input, select {
+  font-size: 1em;
+  padding: 12px;
+  margin: 5px 0;
+  width: 100%;          /* full width on mobile */
+  box-sizing: border-box;
+}
+
+@media (min-width: 600px) {
+  .section {
+    max-width: 500px;
+    margin: auto;
+  }
+  button, input, select {
+    width: auto;        /* normal width on larger screens */
+  }
+}
+
+/* General layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Card styling */
+.card, .centered-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.centered-card {
+  text-align: center;
+}
+
+/* Action grid for counters */
+.action-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action-card {
+  flex: 1 1 100%; /* full width on mobile */
+  background: #e9f5ff;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-card:hover {
+  background: #d0ebff;
+}
+
+/* Counter boxes */
+.counter-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.counter-box {
+  flex: 1 1 100%; /* full width on mobile */
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Manual control */
+.manual-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.manual-card select,
+.manual-card input,
+.manual-card button {
+  font-size: 1em;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Customer link */
+.card-link {
+  margin-top: 10px;
+}
+
+.card-button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.card-button:hover {
+  background: #0056b3;
+}
+
+/* Reset button */
+.reset-btn {
+  background: #dc3545;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  background: #b02a37;
+}
+
+/* Responsive tweaks for larger screens */
+@media (min-width: 600px) {
+  .action-card, .counter-box {
+    flex: 1 1 calc(50% - 10px); /* two per row */
+  }
+  .manual-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .manual-card select,
+  .manual-card input {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .manual-card button {
+    flex: 0 0 auto;
+    width: auto;
+  }
+}
